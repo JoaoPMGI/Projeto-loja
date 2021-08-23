@@ -40,6 +40,8 @@ body {
   display: none;
 }
 
+/*CONTENT-HEADER*/
+
 .cabecalho {
   width: 100%;
   height: 100px;
@@ -112,7 +114,7 @@ body {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.123);
 }
 
-/* /PRINCIPAL/ */
+/* /CONTENT-PRINCIPAL/ */
 .principal {
   width: 100%;
   float: left;
@@ -156,7 +158,7 @@ body {
   padding-bottom: 10px;
 }
 
-/* PRINCIPAL PRODUTOS*/
+/* CONTENT-PRINCIPAL PRODUTOS*/
 #banner {
   width: 100%;
   float: left;
@@ -279,7 +281,7 @@ h3 {
   text-align: center;
 }
 
-/* ONDE-ESTAMOS - SIDEBAR */
+/* CONTENT-ONDE-ESTAMOS - SIDEBAR */
 .onde-estamos {
   width: 30%;
   float: right;
@@ -330,7 +332,7 @@ h3 {
   font-weight: bold;
 }
 
-/* /RODAPE/ */
+/* /CONTENT-RODAPE/ */
 .rodape {
   width: 100%;
   float: left;
@@ -389,7 +391,7 @@ h3 {
   text-align: right;
 }
 
-/* NEWSLETTER */
+/* CONTENT-NEWSLETTER */
 
 .newsletter {
   width: 100%;
@@ -455,7 +457,7 @@ h3 {
   color: white;
 }
 
-/* SERVIÇOS */
+/* CONTENT-SERVIÇOS */
 .servicos {
   width: 80%;
   margin: auto;
@@ -523,7 +525,13 @@ mensais {
   font-weight: bold;
   letter-spacing: 1px;
 }
+
+/* MEDIAQUERIES */
+
+/* MEDIA-940 */
+
 @media screen and (max-width: 940px) {
+  /* CONTENT-MEDIA-PRINCIPAL */
   .menu {
     font-size: 10px;
   }
@@ -574,6 +582,8 @@ mensais {
     display: none;
   }
 
+  /* CONTENT-MEDIA-ONDE-ESTAMOS */
+
   .onde-estamos {
     width: 100%;
     float: right;
@@ -606,6 +616,7 @@ mensais {
     padding-bottom: 5px;
   }
 
+  /* CONTENT-MEDIA-NEWSLETTER */
   .newsletter input {
     width: 100%;
   }
@@ -634,10 +645,13 @@ mensais {
     font-weight: bold;
   }
 
+  /* CONTENT-MEDIA-RODAPE */
+
   .rodape p {
     text-align: center;
   }
 
+  /* CONTENT-MEDIA-PRODUTOS */
   .coluna {
     float: left;
     width: 20%;
@@ -687,13 +701,17 @@ mensais {
     text-align: center;
   }
 
+  /* CONTENT-MEDIA-SERVIÇOS */
   .servicos button {
     margin: 10px 50%;
     transform: translateX(-50%);
   }
 }
 
+/* MEDIA-595 */
+
 @media screen and (max-width: 595px) {
+  /* CONTENT-MEDIA2-PRINCIPAL */
   .principal-responsivo {
     display: block;
     padding: 60px 0 90px 0;
@@ -708,6 +726,8 @@ mensais {
     padding: 4px auto;
     text-align: center;
   }
+
+  /* CONTENT-MEDIA2-PRODUTOS */
 
   #banner {
     display: none;
@@ -728,10 +748,7 @@ mensais {
     transform: translateX(-30%);
   }
 
-  .black-circle {
-    color: black;
-  }
-
+  /* CONTENT-MEDIA2-RODAPE */
   .social-links {
     margin-top: 10px;
   }
@@ -743,13 +760,19 @@ mensais {
     padding-bottom: 10px;
   }
 
+  /* CONTENT-MEDIA2-SERVICOS */
+
   .servicos img {
     margin-left: 0;
     width: 100%;
   }
 }
 
+/* MEDIA-325 */
+
 @media screen and (max-width: 325px) {
+  /* CONTENT-MEDIA3-PRINCIPAL */
+
   .menu {
     display: none;
   }
@@ -793,9 +816,13 @@ mensais {
     transition: 0.2s all linear;
   }
 
+  /* CONTENT-MEDIA3-NEWSLETTER */
+
   .newsletter button {
     width: 100%;
   }
+
+  /* CONTENT-MEDIA3-RODAPE */
 
   .social-links {
     width: 100%;
@@ -808,10 +835,13 @@ mensais {
     padding-bottom: 18px;
   }
 
-  .ofertas h2{
+  /* CONTENT-MEDIA3-PRODUTOS */
+
+  .ofertas h2 {
     margin-top: 30px;
   }
 
+  /* CONTENT-MEDIA3-SERVIÇOS */
 
   .servicos img {
     margin-left: 0;
