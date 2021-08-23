@@ -18,6 +18,7 @@ body {
 
 .menu-responsivo {
   display: none;
+  z-index: 1;
 }
 
 #menu-bars {
@@ -36,7 +37,7 @@ body {
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 .cabecalho {
@@ -175,7 +176,7 @@ body {
 }
 
 .principal-responsivo {
-    display: none;
+  display: none;
 }
 /* .principal button{
     width: 20%;
@@ -637,42 +638,99 @@ mensais {
     text-align: center;
   }
 
-
   .coluna {
     float: left;
     width: 20%;
     margin: 0px;
-}
+  }
+
+  .marcas {
+    width: 100%;
+    float: left;
+    padding: 0 0 20px 0;
+  }
+
+  .marcas h2 {
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .coluna {
+    float: none;
+  }
+
+  .row::after {
+    content: none;
+    clear: both;
+    display: table;
+  }
+
+  .ofertas button {
+    width: fit-content;
+    background-color: #160230ea;
+    color: white;
+    /* padding-left: 10px; */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    float: left;
+    cursor: pointer;
+  }
+
+  .ofertas h2 {
+    text-align: center;
+  }
 
   .servicos button {
     margin: 10px 50%;
     transform: translateX(-50%);
-}
-
+  }
 }
 
 @media screen and (max-width: 595px) {
-    .principal-off {
-        display: none;
-    }
-    .principal-responsivo{
-        display: block;
-        padding: 60px 0 90px 0;
-    }
-    .principal-responsivo h3{
-        font-size: 32px;
-        margin: 30px auto 80px auto;
-    }
-    .principal-responsivo p{
-        font-size: 22px;
-        color: black;
-        padding: 4px auto;
-        text-align: center;
-    }
+  .principal-responsivo {
+    display: block;
+    padding: 60px 0 90px 0;
+  }
+  .principal-responsivo h3 {
+    font-size: 32px;
+    margin: 30px auto 80px auto;
+  }
+  .principal-responsivo p {
+    font-size: 22px;
+    color: black;
+    padding: 4px auto;
+    text-align: center;
+  }
 
-    .black-circle{
-        color: black;
-    }
+  #banner {
+    display: none;
+  }
+
+  .row {
+    display: block;
+    margin: 22px auto;
+  }
+  .coluna {
+    width: 100%;
+    margin: 20px 30%;
+    transform: translateX(-30%);
+  }
+  .ft-1 {
+    width: 100%;
+    margin: 20px 50%;
+    transform: translateX(-30%);
+  }
+
+  .black-circle {
+    color: black;
+  }
 
   .social-links {
     margin-top: 10px;
@@ -692,52 +750,48 @@ mensais {
 }
 
 @media screen and (max-width: 325px) {
-    .menu {
-        display: none;
-      }
-    
-      .menu-responsivo {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        padding: 36px;
-        position: absolute;
-        top: -500px;
-        right: 0;
-        transition: 0.2s all linear;
-        background-image: linear-gradient(
-          to top,
-          #9959ec,
-          #291741
-        );
-      }
-    
-      .menu-responsivo ul li {
-        padding: 36px 0;
-      }
-    
-      .menu-responsivo ul li a {
-        color: white;
-        font-weight: 700;
-        font-size: 18px;
-      }
-    
-      .menu-responsivo ul li a:hover {
-        color: grey;
-        text-decoration: underline;
-      }
-    
-      #menu-bars {
-        display: block;
-      }
-    
-      input[type="checkbox"]:checked ~ .menu-responsivo {
-        top: 86px;
-        left: 0;
-        height: 100%;
-        transition: 0.2s all linear;
-      }
+  .menu {
+    display: none;
+  }
+
+  .menu-responsivo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 36px;
+    position: absolute;
+    top: -500px;
+    right: 0;
+    transition: 0.2s all linear;
+    background-image: linear-gradient(to top, #9959ec, #291741);
+  }
+
+  .menu-responsivo ul li {
+    padding: 36px 0;
+  }
+
+  .menu-responsivo ul li a {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .menu-responsivo ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
+
+  #menu-bars {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-responsivo {
+    top: 86px;
+    left: 0;
+    height: 100%;
+    transition: 0.2s all linear;
+  }
 
   .newsletter button {
     width: 100%;
@@ -753,6 +807,11 @@ mensais {
     padding-top: 10px;
     padding-bottom: 18px;
   }
+
+  .ofertas h2{
+    margin-top: 30px;
+  }
+
 
   .servicos img {
     margin-left: 0;
