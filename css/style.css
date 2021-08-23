@@ -1,0 +1,761 @@
+/* RESET /
+/ (*) reepresenta qualquer tipo de elemento */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.menu-responsivo {
+  display: none;
+}
+
+#menu-bars {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 40px;
+  display: none;
+}
+
+#menu-bars:hover {
+  cursor: pointer;
+  color: gray;
+  transition: ease-in-out all 0.4s;
+}
+
+#check {
+    display: none;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 100px;
+  background-color: #160230ea;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.384);
+}
+
+.cabecalho nav a h1 {
+  font-size: 0;
+}
+
+.cabecalho nav a img:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40%;
+  transition: all 0.3s linear;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 35px;
+  top: 16px;
+  float: left;
+  border-radius: 10px;
+}
+
+#usuario {
+  float: right;
+  position: absolute;
+  right: 0%;
+}
+
+#usuario li {
+  float: left;
+  margin-top: 39px;
+  margin-right: 50px;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.fa,
+.fas:hover {
+  color: #4b8f8c;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #ffffff;
+  float: left;
+  padding: 39px 5px 0px 30px;
+}
+
+.menu li {
+  position: relative;
+  left: 120px;
+}
+
+.menu a:hover {
+  color: #4b8f8c;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.123);
+}
+
+/* /PRINCIPAL/ */
+.principal {
+  width: 100%;
+  float: left;
+  padding: 16px 8%;
+}
+.sobre {
+  width: 70%;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+.sobre h2 {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sobre #slogan {
+  font-size: 1.3em;
+  /* text-decoration: underline; */
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+  padding-bottom: 15px;
+}
+
+.sobre img {
+  width: 50%;
+  float: left;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+}
+
+.sobre p {
+  text-align: justify;
+}
+
+.sobre h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* PRINCIPAL PRODUTOS*/
+#banner {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+  margin: 0 20px 20px 0;
+}
+
+.principal form {
+  width: 80%;
+  float: right;
+}
+.principal input[type="text"] {
+  width: 80%;
+  float: left;
+  padding: 15px 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.principal-responsivo {
+    display: none;
+}
+/* .principal button{
+    width: 20%;
+    float: right;
+    padding: 15px 10px;
+    border-radius: 0 10px 10px 0;
+    background-color: #0cae98; 
+    color: rgb(7, 7, 7);
+    cursor: pointer; */
+
+.marcas {
+  width: 100%;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+.marcas h2 {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#img1 {
+  width: 60%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#img2 {
+  width: 60%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#img3 {
+  width: 45%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#img4 {
+  width: 60%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.coluna {
+  float: left;
+  width: 20%;
+  /* padding-right:200px; */
+  margin: 25px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.ofertas h2 {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+#img5 {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.ofertas button {
+  width: 50%;
+  background-color: #160230ea;
+  color: white;
+
+  /* padding-left: 10px; */
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 50px;
+  float: left;
+  cursor: pointer;
+}
+
+.ofertas button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.2s linear;
+  /* transition-delay: .1s; */
+}
+
+h3 {
+  text-align: center;
+}
+
+/* ONDE-ESTAMOS - SIDEBAR */
+.onde-estamos {
+  width: 30%;
+  float: right;
+  padding: 25px 10px 50px 10px;
+  background-color: #f5f5f5ea;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+}
+.onde-estamos h2 {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.103);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.onde-estamos iframe {
+  width: 95%;
+  height: 200px;
+  margin: 10px 10px;
+}
+.onde-estamos {
+  color: #181818;
+  margin-bottom: 12px;
+}
+.ondeestamos-icons i {
+  color: black;
+  padding-bottom: 5px;
+}
+
+#fixo {
+  padding-right: 15px;
+  padding: 10px;
+}
+
+#telefone {
+  padding-right: 15px;
+  padding: 10px;
+}
+#email {
+  padding-right: 15px;
+  padding: 10px;
+}
+
+#fixo li {
+  font-weight: bold;
+}
+
+/* /RODAPE/ */
+.rodape {
+  width: 100%;
+  float: left;
+  background-color: #160230ea;
+  margin: auto;
+  padding: 25px 8%;
+}
+
+.social-links {
+  width: 50%;
+  float: left;
+  color: white;
+}
+
+.social-links h2 {
+  float: left;
+}
+
+.social-links a {
+  float: left;
+  padding: 0 8px;
+  color: white;
+}
+
+.social-links .fa-facebook:hover {
+  color: #3b5998;
+}
+
+.social-links .fa-twitter:hover {
+  color: #298dff;
+}
+
+.social-links .fa-instagram:hover {
+  background-image: linear-gradient(to bottom, #e8000d, #be008d);
+}
+
+.social-links .fa-envelope:hover {
+  color: #28a965;
+}
+
+.social-links .fa-google:hover {
+  color: #ea4335;
+}
+
+.social-links .fa-youtube:hover {
+  color: #cc0000;
+}
+
+.social-links .fa-linkedin:hover {
+  color: #0270ad;
+}
+
+.rodape p {
+  color: #fff;
+  float: right;
+  text-align: right;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  width: 100%;
+  float: left;
+  background-color: #111;
+  padding: 50px 8%;
+}
+
+.newsletter h3 {
+  font-size: 1.8em;
+  color: white;
+  text-align: left;
+}
+
+.newsletter p {
+  color: white;
+  font-size: 1.2em;
+}
+
+.newsletter form {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  width: 30%;
+  margin-right: 3%;
+  padding: 15px 10px;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  background-color: initial;
+  color: white;
+}
+
+.newsletter input:focus {
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+.newsletter input::placeholder {
+  color: #9d9d9d;
+}
+
+.newsletter button {
+  width: 17%;
+  background-color: white;
+  padding: 15px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: rgba(255, 255, 255, 0.836);
+  color: black;
+  transition: all 0.2s linear;
+  /* transition-delay: .1s; */
+}
+
+.newsletter button:active {
+  background-color: initial;
+  color: white;
+}
+
+/* SERVIÇOS */
+.servicos {
+  width: 80%;
+  margin: auto;
+}
+.planos {
+  float: right;
+}
+.servicos .t1 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.servicos .subt {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.servicos img {
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.planos,
+mensais {
+  border: 1px solid black;
+  padding: 10px;
+}
+.planos {
+  margin-right: 20px;
+  padding: 15px;
+  color: white;
+  background-color: #160230ea;
+  border-radius: 10px;
+  box-shadow: 3px 2px 3px #1602304d;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.titulo {
+  text-align: center;
+  padding: 10px;
+}
+
+.servicos button {
+  cursor: pointer;
+  padding: 8px 14px;
+  margin-left: 120px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 8px;
+  background-color: initial;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+}
+.servicos button:hover {
+  background-color: #160230fd;
+}
+.servicos h6 {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 940px) {
+  .menu {
+    font-size: 10px;
+  }
+
+  .principal {
+    width: 100%;
+    float: left;
+    padding: 16px 8%;
+  }
+  .sobre {
+    width: 100%;
+    float: left;
+    padding: 0 0 20px 0;
+  }
+  .sobre h2 {
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .sobre #slogan {
+    font-size: 1.3em;
+    /* text-decoration: underline; */
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+    padding-bottom: 15px;
+  }
+
+  .sobre img {
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+  }
+
+  .sobre p {
+    text-align: justify;
+  }
+
+  .sobre h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #usuario {
+    display: none;
+  }
+
+  .onde-estamos {
+    width: 100%;
+    float: right;
+    padding: 25px 10px 50px 10px;
+    background-color: #f5f5f5ea;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+  }
+  .onde-estamos h2 {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.103);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .onde-estamos iframe {
+    width: 95%;
+    height: 200px;
+    margin: 10px 10px;
+  }
+  .onde-estamos {
+    color: #181818;
+    margin-bottom: 12px;
+  }
+  .ondeestamos-icons i {
+    color: black;
+    padding-bottom: 5px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter button {
+    width: 30%;
+    margin: 10px 50%;
+    transform: translateX(-50%);
+  }
+
+  #fixo {
+    padding-right: 15px;
+    padding: 10px;
+  }
+
+  #telefone {
+    padding-right: 15px;
+    padding: 10px;
+  }
+  #email {
+    padding-right: 15px;
+    padding: 10px;
+  }
+
+  #fixo li {
+    font-weight: bold;
+  }
+
+  .rodape p {
+    text-align: center;
+  }
+
+
+  .coluna {
+    float: left;
+    width: 20%;
+    margin: 0px;
+}
+
+  .servicos button {
+    margin: 10px 50%;
+    transform: translateX(-50%);
+}
+
+}
+
+@media screen and (max-width: 595px) {
+    .principal-off {
+        display: none;
+    }
+    .principal-responsivo{
+        display: block;
+        padding: 60px 0 90px 0;
+    }
+    .principal-responsivo h3{
+        font-size: 32px;
+        margin: 30px auto 80px auto;
+    }
+    .principal-responsivo p{
+        font-size: 22px;
+        color: black;
+        padding: 4px auto;
+        text-align: center;
+    }
+
+    .black-circle{
+        color: black;
+    }
+
+  .social-links {
+    margin-top: 10px;
+  }
+  .social-links h2 {
+    margin-top: 8px;
+  }
+  .social-links a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .servicos img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+    .menu {
+        display: none;
+      }
+    
+      .menu-responsivo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 36px;
+        position: absolute;
+        top: -500px;
+        right: 0;
+        transition: 0.2s all linear;
+        background-image: linear-gradient(
+          to top,
+          #9959ec,
+          #291741
+        );
+      }
+    
+      .menu-responsivo ul li {
+        padding: 36px 0;
+      }
+    
+      .menu-responsivo ul li a {
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    
+      .menu-responsivo ul li a:hover {
+        color: grey;
+        text-decoration: underline;
+      }
+    
+      #menu-bars {
+        display: block;
+      }
+    
+      input[type="checkbox"]:checked ~ .menu-responsivo {
+        top: 86px;
+        left: 0;
+        height: 100%;
+        transition: 0.2s all linear;
+      }
+
+  .newsletter button {
+    width: 100%;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+  .social-links h2 {
+    margin-right: 18px;
+  }
+  .social-links a {
+    padding-top: 10px;
+    padding-bottom: 18px;
+  }
+
+  .servicos img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
