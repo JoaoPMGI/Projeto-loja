@@ -6,7 +6,7 @@
 
 **Participantes:**
 - [Alanys Ferreira Oliveira](https://github.com/AlanysF);
-- Beatriz Romão Ribeiro;
-- Geovanna Souza C.;
-- Natã Pedro da Silva;
+- [Beatriz Romão Ribeiro](https://github.com/Biaromao);
+- [Geovanna Souza C.](https://github.com/Geovannacordeiro);
+- [Natã Pedro da Silva](https://github.com/DevPedro10);
 - [João Pedro M. Gomes](https://github.com/JoaoPMGI);
