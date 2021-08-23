@@ -5,7 +5,7 @@
 ---
 
 **Participantes:**
-- Alanys Ferreira Oliveira;
+- [Alanys Ferreira Oliveira](https://github.com/AlanysF);
 - Beatriz Romão Ribeiro;
 - Geovanna Souza C.;
 - Natã Pedro da Silva;
