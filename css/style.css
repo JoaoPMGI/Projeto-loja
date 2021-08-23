@@ -458,13 +458,25 @@ h3 {
 }
 
 /* CONTENT-SERVIÇOS */
+.planos-opt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adj {
+  height: 430px;
+}
+
+.adj2 {
+  height: 580px;
+}
+
 .servicos {
   width: 80%;
   margin: auto;
 }
-.planos {
-  float: right;
-}
+
 .servicos .t1 {
   text-align: center;
   font-size: 1.4em;
@@ -479,9 +491,13 @@ h3 {
 }
 .servicos img {
   display: block;
-  float: left;
   margin-bottom: 20px;
   margin-left: 50px;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-40%);
 }
 .planos,
 mensais {
@@ -489,6 +505,7 @@ mensais {
   padding: 10px;
 }
 .planos {
+  width: 40%;
   margin-right: 20px;
   padding: 15px;
   color: white;
@@ -497,6 +514,9 @@ mensais {
   box-shadow: 3px 2px 3px #1602304d;
   line-height: 30px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  bottom: 250px;
 }
 .titulo {
   text-align: center;
@@ -506,8 +526,8 @@ mensais {
 .servicos button {
   cursor: pointer;
   padding: 8px 14px;
-  margin-left: 120px;
-  margin-top: 10px;
+  margin: 10px 50%;
+  transform: translateX(-50%);
   text-align: center;
   font-size: 1.1em;
   border-radius: 8px;
@@ -705,6 +725,15 @@ mensais {
   .servicos button {
     margin: 10px 50%;
     transform: translateX(-50%);
+  }
+
+  .planos-opt {
+    display: block;
+  }
+
+  .planos {
+    width: 100%;
+    text-align: center;
   }
 }
 
